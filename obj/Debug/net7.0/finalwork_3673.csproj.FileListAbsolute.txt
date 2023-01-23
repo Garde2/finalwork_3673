@@ -1,0 +1,15 @@
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.csproj.AssemblyReference.cache
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.GeneratedMSBuildEditorConfig.editorconfig
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.AssemblyInfoInputs.cache
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.AssemblyInfo.cs
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.csproj.CoreCompileInputs.cache
+D:\3673\finalwork_3673\bin\Debug\net7.0\finalwork_3673.exe
+D:\3673\finalwork_3673\bin\Debug\net7.0\finalwork_3673.deps.json
+D:\3673\finalwork_3673\bin\Debug\net7.0\finalwork_3673.runtimeconfig.json
+D:\3673\finalwork_3673\bin\Debug\net7.0\finalwork_3673.dll
+D:\3673\finalwork_3673\bin\Debug\net7.0\finalwork_3673.pdb
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.dll
+D:\3673\finalwork_3673\obj\Debug\net7.0\refint\finalwork_3673.dll
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.pdb
+D:\3673\finalwork_3673\obj\Debug\net7.0\finalwork_3673.genruntimeconfig.cache
+D:\3673\finalwork_3673\obj\Debug\net7.0\ref\finalwork_3673.dll
