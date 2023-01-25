@@ -32,7 +32,7 @@ l1:Console.WriteLine("Сколько элементов Вы хотите вид
 int size = Convert.ToInt32(Console.ReadLine());
 if (size <= 0)
       {
-        Console.WriteLine("Количество строк не может быть рано нулю! Введите значение еще раз: ");goto l1;        
+        Console.WriteLine("Количество элементов не должно быть рано нулю! Введите значение еще раз: ");goto l1;        
       }
 
 string [] arrayBase = CreateArray(size);
@@ -96,4 +96,3 @@ string [] LessThan3SymbolsArray(string [] array)
 string [] arraySorted = LessThan3SymbolsArray(arrayBase);
 ShowArray(arraySorted);
 Console.Write("]");
-
