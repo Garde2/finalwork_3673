@@ -24,8 +24,7 @@ void ShowArray(string [] array)
     foreach (var item in array) 
     {
         Console.Write($"{item} ");
-    }   
-    
+    }       
 }
 
 Console.WriteLine("Давайте узнаем, сколько строк во введенном Вами массиве содержат 3 и менее символов!");
@@ -40,36 +39,61 @@ string [] arrayBase = CreateArray(size);
 ShowArray(arrayBase);
 Console.Write("] -> ");
 
-string [] LessThan3(string [] array, int size)        //не хочет, зараза, быть красиво написанные вверху =( потому что у нас нет точки вхождения метода Main, как я помню
-                                                      // но поскольку нас этому еще не учили, хоть и показали, то и я не буду использовать
-{                 
-    string [] array1 = new string[size];
-    int count = 0; 
-    string s = "0k0";                               //Я подставила костыль) он работает, но только если вводим лишь цифры или лишь буквы или символы типа смайла
-    for (int i = 0; i < arrayBase.Length; i++)
-    { 
-        if(arrayBase[count].Length <= s.Length)
-        {
-            array1[i] = arrayBase[count]; 
-            count++; 
-        }                                                           
-    }    
+//// Вообще, если делать выборку результатов ТОЛЬКО как в приведенном примере, можно обойтись таким вот костылем и будет работать! :)
+
+// string [] LessThan3(string [] array, int size)        
+// {                 
+//     string [] array1 = new string[size];
+//     int count = 0; 
+//     string s = "0k0";                               
+//     for (int i = 0; i < arrayBase.Length; i++)
+//     { 
+//         if(arrayBase[count].Length <= s.Length)
+//         {
+//             array1[i] = arrayBase[count]; 
+//             count++; 
+//         }                                                           
+//     }    
     
-    return array1;    
+//     return array1;    
+// }
+
+// string [] arraySorted = LessThan3(arrayBase, size);
+//ShowArray(arraySorted);
+
+int CountSymbols(string [] array)
+{
+    int counter = 0;
+    foreach (string item in array)
+    {
+        if (item.Length <= 3)
+        {
+            counter++;
+        }        
+    }
+
+    return counter;
 }
 
-string [] arraySorted = LessThan3(arrayBase, size);
-ShowArray(arraySorted);
+string [] LessThan3SymbolsArray(string [] array)
+{
+    int arraySortedSize = CountSymbols(arrayBase);
+    string [] arraySorted = new string[arraySortedSize];
+    int i = 0;
 
-// for (int i = 0; i < arrayBase.Length; i++)
-// { 
-//     if (arraySorted[i] != null)
-//     {
-//         ShowArray(arraySorted);          
-//     }  
-//     else 
-//     {
-//         Console.WriteLine("Я не шмогла...");   
-//     }  
-// }
+    foreach (string item in arrayBase)
+    {
+        if (item.Length <= 3)
+        {
+            arraySorted[i] = item;
+            i++;
+        }        
+    }
+    
+    return arraySorted;
+}
+
+string [] arraySorted = LessThan3SymbolsArray(arrayBase);
+ShowArray(arraySorted);
+Console.Write("]");
 
